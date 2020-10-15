@@ -33,6 +33,12 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
+
+    /**
+     * Definte Namespace because laravel 8.x cannot automatically add namespace
+     */
+    protected $namespace = 'App\Http\Controllers';
+
     public function boot()
     {
         $this->configureRateLimiting();
